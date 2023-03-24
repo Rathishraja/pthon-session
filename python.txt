@@ -1,0 +1,576 @@
+#download
+
+    www.pyton.org and pycharm
+
+#printing..
+    >print("hello world")
+
+#draw a shape..
+    >print("      ")
+    >print("    /|")
+    >print("   / |")
+    >print("  /  |")
+    >print(" /   |")
+    >print("/____|")
+
+#variables and data types
+
+     charecter_name = "jhon"
+     character_age = "35"
+     print("there lived a man named" + charecter_name + ",")
+     print("his age was " + character_age + ",")
+     print("he was not happy on his age is " + charecter_age + ",")
+
+    /string
+    > to add a new line
+     print("tact labs") > print("tact \n labs")
+
+    /store string as variable
+     phrase = "i am rathish"
+     print(phrase + "hi gys")
+
+    /using the upper case and lower case
+     phrase = "i am rathish"
+     print(phrase.upper())
+
+    /condition to check weather upper
+     phrase = "i am rathish"
+     print(phrase.upper().isupper())
+
+    /length of the string
+     phrase = "i am rathish"
+     print(len(phrase))
+
+    /index print
+     phrase = "i am rathish"
+     print(phrase[5])
+
+    /psition of the charecter 
+     phrase = "i am rathish"
+     print(phrase.index("h"))
+
+    /replacing
+     phrase = "i am rathish"
+     print(phrase.replace("rathish" , "raddish"))
+
+#working with number
+
+    /multiple mathamatical operation 
+      print(3*(4+5))
+    
+    /mathematical operations
+      print(4+5)
+      print(3*(4+5))
+      print(10%3)
+
+    /using the variable
+      num=10
+      print(num)
+
+    /converting the number to a string
+      num=10
+      print(str(num) + " my favorite number")
+
+    /to get the absolute value
+      num=-9
+      print(abs(num))
+
+    /to get the power 
+      print(pow(2,4))
+
+    /to get the maximum
+      print(max(2,4))
+
+    /to get the minimum
+      print(min(2,4))
+
+    /to round of the value
+      print(round(10.5988900))
+
+    /import the module
+      from math import *
+
+    /take the value before the decimal point 
+      print(floor(3.7))
+
+    /to raise the value to absolute
+      print(ceil(3.7))
+
+    /to get the square root value
+      print(sqrt(9))
+
+#getting the input from the user  
+    val = input("Enter your value: ")
+    print(val)
+
+#making a basic calculator
+    /addition
+     
+     num1 = input("enter the number :")
+     num2 = input("enter another number :")
+     result = num1 + num2 
+     print(result)
+
+#mad libs game
+     
+     name = input("enter the name :")
+     noun = input("enter the noun :")
+     colour = input("enter the colour :")
+
+     print("Roses are " + colour)
+     print(noun + " are Blue")
+     print("I Love " + name)
+
+#list
+
+    /create a list 
+     friends = ["rathish","kishore","rino"]
+
+     /printing the list
+     print(friends)
+
+     /printing through the index
+     print(friends[0])
+     print(friends[2])
+
+    /printing through the reverse index
+     print(friends[-1])
+     print(friends[-3])
+
+    /print the particular elements in index
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     print(friends[1:4])
+     
+    /to change the element inside the list
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends[3] = "valter"
+     print(friends)
+
+  #list functions
+
+    /extend function
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     lucky_num = [2,4,6,8]
+     friends.extend(lucky_num)
+     print(friends)
+    
+    /append function
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     lucky_num = [2,4,6,8]
+     friends.append("kevin")
+     print(friends)
+
+    /insert function
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends.insert(2,"vetri")
+     print(friends)
+
+    /remove function
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends.remove("kavi")
+     print(friends)
+
+    /clear function - all clear
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends.clear()
+     print(friends)
+
+    /pop function - last element delete
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends.pop()
+     print(friends)
+
+    /index function - getting the index of the certain value
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     print(friends.index("rino"))
+
+    /count function - count the times of value used inside the list
+     friends = ["rathish","kishore","rino","rino","rino","kavi","muthu","vishal"]
+     print(friends.count("rino"))
+
+    /sort function - sorting in ascending order
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends.sort()
+     print(friends)
+
+    /reverse function - sorting in descending order
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends.reverse()
+     print(friends)
+
+    /copy function - copy the list
+     friends = ["rathish","kishore","rino","kavi","muthu","vishal"]
+     friends2 = friends.copy()
+     print(friends2)
+
+#tuple
+    /create a tuple 
+     coordinates = (3,4)
+     print(coordinates)
+
+    /accessing by the index 
+     coordinates = (3,4)
+     print(coordinates[1])
+
+    /cant change the value using the index 
+     coordinates = (3,4)
+     coordinates[0] = 10
+     print(coordinates)
+
+      output
+
+        tuple' object does not support item assignment
+
+#functions
+    /define the function
+     def say_hi():
+          print("Hi")
+
+    /call the function
+     def say_hi():
+          print("Hi")
+      
+     say_hi()
+
+    /call function with variable 
+    def say_hi(name):
+        print("Hi " + name)
+
+     say_hi("rathish")
+     say_hi("jhon")
+    
+    /call variable with two variable 
+    def say_hi(name,age):
+        print("Hi " + name + " you are " + age)
+
+     say_hi("rathish","18")
+     say_hi("kishore","18")
+
+    /call variable with mentioned data type 
+    def say_hi(name,age):
+        print("Hi " + name + " you are " + str(age))
+
+     say_hi("rathish",18)
+     say_hi("kishore",18)
+
+#return statement
+
+    /use the return statement
+     def cube(num)
+       return num*num*num
+
+     print(cube(3))
+
+    /using the variable for the fuinction
+     def cube(num)
+       return num*num*num
+
+     result = cube(3)
+     print(result)
+
+
+#if statement
+    
+    /use if alone
+     is_male = True
+
+     if is_male :
+        print("You are Male")
+
+    /using if and elements
+     is_male = True
+
+     if is_male :
+        print("You are Male")
+     else :
+        print("you are not a male")
+
+    /using the if else and "or"
+     is_male = True
+     is_tall = False
+
+     if is_male and is_tall :
+      print("you are male")
+     else :
+      print("you are not a male")
+
+    /using the if else and "and"
+     is_male = True
+     is_tall = True
+
+     if is_male and is_tall :
+      print("you are male")
+     else :
+      print("you are not a male")
+
+    /using the elif
+     is_male = True
+     is_tall = True
+
+     if is_male and is_tall :
+      print("you are male")
+    elif is_male and not(is_tall):
+      print("you are short male")
+     else :
+      print("you are not a male")
+    
+#if statements and comparision
+    /comparing the three numbers
+     def max_num(num1,num2,num3):
+      if num1 >= num2 and num1 >= num3 :
+       return num1
+      elif num2 >= num1 and num2 >= num3 :
+       return num2
+      else : 
+       return num3
+
+    print(max_num(3,4,5))
+
+#making a better calculator
+    /all the calculation in one streatch
+     num1 = float(input("enter the first number :"))
+     op = input("enter the operator :")
+     num2 = float(input("enter the second number"))
+
+     if op == '+' :
+       result = num1 + num2
+     elif op == '-' :
+       result = num1 - num2
+     elif op == '*' :
+       result = num1 * num2
+     elif op == '/' :
+       result = num1/num2
+     elif op == '%' :
+       result = num1 % num2
+     else :
+       result = "invalid input"
+     print(result)
+       
+#dictionaries
+    /months conservation
+     month = {
+      "jan" : "january",
+      "feb" : "february",
+      "mar" : "march",
+      "apr" : "april",
+      "may" : "may",
+      "jun" : "june",
+      "jul" : "july",
+      "aug" : "august",
+      "sep" : "september",
+      "oct" : "october",
+      "nov" : "november",
+      dec" : "december"
+      }
+     print(month["mar"])
+     print(month.get("dec"))
+
+#while loop
+    /while loop syntax
+     i=0
+     while i<=10
+     print(i)
+     i += 1
+
+#game on guessing
+
+    /game by using while only
+     secret_letter = "lock"
+     guess =  ""
+
+     while guess != secret_letter:
+      guess = input("enter the guess")
+
+     print("you won")
+
+     /counting the guess
+     secret_letter = "lock"
+     guess =  ""
+     guess_count = 0
+
+     while guess != secret_letter:
+      guess = input("enter the guess")
+      guess_count += 1
+     print("you won")    
+     print(guess_count)
+
+    /use the while and if condition togather
+     secret_letter = "lock"
+     guess =  ""
+     guess_count = 0
+     limit = 3
+     out_of = False
+
+     while guess != secret_letter and not(out_of):
+        if guess_count <= limit :
+            guess = input("enter the guess")
+            guess_count += 1
+        else : 
+              out_of = True
+
+     if(out_of):
+      print("you are out of guess!")
+     else :
+      print("you won")
+     print(guess_count)
+
+#for loop
+
+    /basic loop using for
+     for letter in "Rathish" :
+      print(letter)
+
+    /for loop  in list
+     friends = ["rathish","kishore","rino"]
+     for friend in friends :
+      print(friend)
+    
+    /using the range
+     for index in range(10):
+     print(index)
+
+    /using the range limits
+     for index in range(3,10)
+     print(index)
+
+    /using for in llist
+     friends = ["rathish","kishore","rino"]
+     for index in range(len(friends)):
+     print(friends[index])
+
+    /using the for loop little complex
+     for index in range(5)
+      if index == 0:
+        print("first index")
+      else :
+        print("not the first index")
+
+#exponant function
+
+    /power in python
+     def exp(base,pow):
+     result = 1
+      for index in range(pow):
+        result = result*base
+        return result
+      print(exp(2,3))
+
+#2D list and nested loops
+
+    /create a list
+     number_grid=[
+      [1,2,3],
+      [4,5,6],
+      [7,8,9],
+      [0]
+     ]
+     print(number_grid[0])
+     print(number_grid[0][2])
+
+    /print the row and column
+     number_grid=[
+      [1,2,3],
+      [4,5,6],
+      [7,8,9],
+      [0]
+     ]
+     for row in number_grid :
+        for col in row:
+          print(col)
+
+#build a translator
+      /translator simple
+       def translate(phrase):
+       translation = ""
+       for letter in phrase :
+          if letter.lower() in "aeiou" :
+              if letter.isupper():
+                  translation = translation + "G"
+              else :
+                  translation = translation + "g"
+          else :
+            translation = translation + letter
+        return translation
+       print(translate(input("enter the phrase : ")))
+
+
+#comments
+    /comment using
+     '''
+     rathish
+     raja
+     168
+     '''
+     #this prograam prints the string
+
+     print("comments are fun")
+
+#try except
+    /try with one except
+     
+     try:  
+      number = int(input("enter the number : "))
+      print(number)
+     except :
+      print("invalid input")
+    
+    /try with many except
+         
+     try:   
+      value = 10/0
+      number = int(input("enter the number : "))
+      print(number)
+     except ZeroDivisionError:
+      print("divided by zero")
+
+     except ValueError:
+      print("invalid input")
+
+#reading the file
+    /read the file already exists
+     my_notes = open("python.txt","r")
+
+     print(my_notes.read())
+
+     my_notes.close()
+
+    /read using the for loop
+     my_notes = open("file.txt","r")
+
+     for i in my_notes.readlines():
+      print(i)
+
+     my_notes.close()
+
+#write to a file
+    /write a file
+     notes = open("file.txt","a")
+
+     notes.write("welcome to my text file")
+
+     notes.close()
+
+    /add \n for making the new line
+     notes = open("file.txt","a")
+     notes.write("\n good evening all")
+     notes.close()
+
+#modules and pip
+
+    /create the file or module to controll
+     import random
+
+     def roll_dice(num):
+      return random.randint(1,num)
+
+
+    /acess the file or module we created previous
+     import dice
+
+     print(dice.roll_dice(10))
+
+    ////search for python modules in googl;e you can access several kind of python modules
+
+    //use the pip install comand to install the unavailable libraries
+
+#classes and object
